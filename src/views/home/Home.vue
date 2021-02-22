@@ -1,20 +1,23 @@
 <template>
 <div id="home">
    <nav-bar class="home-nav"><div slot="center">购物街</div></nav-bar>
-   <swiper>
+   <home-swiper :banners="banners"></home-swiper>
+   <!-- <swiper>
       <swiper-item v-for="item in banners" :key="item.link">
         <a :href="item.link">
             <img :src="item.image" alt="">
         </a>
       </swiper-item>
-   </swiper>  
+   </swiper>   -->
 </div>           
 </template>
 
 <script>
 import NavBar from '@/components/common/navbar/NavBar'
-import {Swiper,SwiperItem} from '@/components/common/swiper'
+// import {Swiper,SwiperItem} from '@/components/common/swiper'
 import {getMultiData} from "@/network/home";
+import HomeSwiper from "@/views/home/childComp/HomeSwiper"
+
 
 
 export default {
@@ -27,8 +30,9 @@ export default {
     },
     components: {
       NavBar,
-      Swiper,
-      SwiperItem
+      HomeSwiper
+      // ,Swiper,
+      // SwiperItem
     },
    
     created() {
