@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <TabbarPage></TabbarPage>
+    <tabbar-page></tabbar-page>
     <router-view></router-view>
   </div>
 </template>
@@ -9,10 +9,12 @@
 
 import TabbarPage from '@/components/content/TabbarPage'
 
+
 export default {
   name: 'App',
   components: {
     TabbarPage
+
   }
   
 }

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-const TabbarPage = () => import('@/components/content/TabbarPage.vue')
+//const TabbarPage = () => import('@/components/content/TabbarPage.vue')
 const Home = () => import('@/views/home/Home.vue')
 const Category = () => import('@/views/category/Category.vue')
 const Cart = () => import('@/views/cart/Cart.vue')
@@ -15,7 +15,7 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    component: TabbarPage
+    redirect: '/home'
   },
   {
     path: '/home',
