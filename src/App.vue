@@ -8,7 +8,7 @@
 
 <script>
 
-import TabbarPage from '@/components/content/TabbarPage'
+import TabbarPage from '@/components/content/TabbarPage/TabbarPage'
 
 
 export default {

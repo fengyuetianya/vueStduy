@@ -3,6 +3,7 @@
    <nav-bar class="home-nav"><div slot="center">购物街</div></nav-bar>
    <home-swiper :banners="banners"></home-swiper>
    <HomeRecommend :recommends="recommends"></HomeRecommend>
+   <home-feature></home-feature>
    <!-- <swiper>
       <swiper-item v-for="item in banners" :key="item.link">
         <a :href="item.link">
@@ -19,6 +20,8 @@ import NavBar from '@/components/common/navbar/NavBar'
 import {getMultiData} from "@/network/home";
 import HomeSwiper from "@/views/home/childComp/HomeSwiper"
 import HomeRecommend from '@/views/home/childComp/HomeRecommend'
+import HomeFeature from '@/views/home/childComp/HomeFeature'
+
 
 
 
@@ -33,7 +36,9 @@ export default {
     components: {
       NavBar,
       HomeSwiper,
-      HomeRecommend
+      HomeRecommend,
+      HomeFeature
+        
       // ,Swiper,
       // SwiperItem
     },
