@@ -14,7 +14,7 @@ Vue.use(VueRouter)
 //创建路由对象
 const routes = [
   {
-    path: '/',
+    path: '',
     redirect: '/home'
   },
   {
